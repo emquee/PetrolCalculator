@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Checked (selected) state -->
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#0F0F12"/>
+        </shape>
+    </item>
+
+    <!-- Pressed / hover state -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#2A2A2E"/>
+        </shape>
+    </item>
+
+    <!-- Default state -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF"/>
+        </shape>
+    </item>
+
+</selector>

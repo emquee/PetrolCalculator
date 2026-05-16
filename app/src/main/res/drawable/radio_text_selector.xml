@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Text is white when the button is checked (selected) -->
+    <item android:state_checked="true" android:color="#FFFFFF"/>
+
+    <!-- Text is white when pressed -->
+    <item android:state_pressed="true" android:color="#FFFFFF"/>
+
+    <!-- Default: dark text on white background -->
+    <item android:color="#18181B"/>
+
+</selector>

@@ -25,7 +25,7 @@ public class AboutActivity extends AppCompatActivity {
         textGithub.setOnClickListener(v -> {
             Intent intent = new Intent(
                     Intent.ACTION_VIEW,
-                    Uri.parse("https://github.com/YOUR_USERNAME")
+                    Uri.parse("https://github.com/emquee/PetrolCalculator")
             );
             startActivity(intent);
         });

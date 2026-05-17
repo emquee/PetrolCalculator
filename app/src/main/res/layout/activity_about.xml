@@ -7,73 +7,85 @@
     android:orientation="vertical"
     android:background="#F4F3F0">
 
-    <!-- Dark hero header -->
+    <!-- Header -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:background="#0F0F12"
         android:gravity="center_horizontal"
-        android:paddingTop="28dp"
-        android:paddingBottom="24dp"
+        android:paddingTop="22dp"
+        android:paddingBottom="18dp"
         android:paddingStart="20dp"
         android:paddingEnd="20dp">
 
-        <!-- Avatar -->
-        <ImageView
-            android:id="@+id/profileImage"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@mipmap/ic_launcher_round"
-            android:scaleType="centerCrop" />
+        <LinearLayout
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:gravity="center"
+            android:background="@drawable/about_avatar_bg">
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/ic_launcher_round"
+                android:scaleType="centerCrop" />
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Petrol Cost Calculator"
             android:textSize="12sp"
-            android:textColor="#666666"
-            android:layout_marginTop="3dp" />
+            android:textColor="#7A7A7A"
+            android:layout_marginTop="8dp" />
 
     </LinearLayout>
 
-    <!-- Scrollable info section -->
+    <!-- Scroll -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:overScrollMode="never">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="14dp">
 
-            <!-- Info card -->
+            <!-- Card -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:background="#FFFFFF">
+                android:background="@drawable/about_card_bg">
 
-                <!-- Name row -->
+                <!-- NAME -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:paddingStart="14dp"
-                    android:paddingEnd="14dp"
-                    android:paddingTop="14dp"
-                    android:paddingBottom="14dp"
-                    android:gravity="center_vertical">
+                    android:gravity="center_vertical"
+                    android:padding="13dp">
 
-                    <ImageView
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:padding="6dp"
-                        android:src="@drawable/ic_person"
-                        android:tint="#555555"
-                        android:background="#F4F3F0" />
+                    <LinearLayout
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:gravity="center"
+                        android:background="@drawable/about_icon_bg">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/ic_person"
+                            android:tint="#555555"/>
+
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -87,15 +99,16 @@
                             android:layout_height="wrap_content"
                             android:text="Name"
                             android:textSize="10sp"
-                            android:textColor="#999999" />
+                            android:textStyle="bold"
+                            android:textColor="#9A9A9A"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="MARSYA QISTINA BINTI MEOR RUSYDI"
+                            android:text="Marsya Qistina Binti Meor Rusydi"
                             android:textSize="14sp"
                             android:textStyle="bold"
-                            android:textColor="#18181B" />
+                            android:textColor="#18181B"/>
 
                     </LinearLayout>
 
@@ -104,27 +117,30 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="0.5dp"
-                    android:background="#F0EEE9"
-                    android:layout_marginStart="58dp" />
+                    android:background="#EFEDE8"
+                    android:layout_marginStart="60dp"/>
 
-                <!-- Student ID row -->
+                <!-- STUDENT ID -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:paddingStart="14dp"
-                    android:paddingEnd="14dp"
-                    android:paddingTop="14dp"
-                    android:paddingBottom="14dp"
-                    android:gravity="center_vertical">
+                    android:gravity="center_vertical"
+                    android:padding="13dp">
 
-                    <ImageView
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:padding="6dp"
-                        android:src="@drawable/ic_badge"
-                        android:tint="#555555"
-                        android:background="#F4F3F0" />
+                    <LinearLayout
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:gravity="center"
+                        android:background="@drawable/about_icon_bg">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/ic_badge"
+                            android:tint="#555555"/>
+
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -138,7 +154,8 @@
                             android:layout_height="wrap_content"
                             android:text="Student ID"
                             android:textSize="10sp"
-                            android:textColor="#999999" />
+                            android:textStyle="bold"
+                            android:textColor="#9A9A9A"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -146,7 +163,7 @@
                             android:text="2025106901"
                             android:textSize="14sp"
                             android:textStyle="bold"
-                            android:textColor="#18181B" />
+                            android:textColor="#18181B"/>
 
                     </LinearLayout>
 
@@ -155,27 +172,30 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="0.5dp"
-                    android:background="#F0EEE9"
-                    android:layout_marginStart="58dp" />
+                    android:background="#EFEDE8"
+                    android:layout_marginStart="60dp"/>
 
-                <!-- Programme row -->
+                <!-- COURSE -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:paddingStart="14dp"
-                    android:paddingEnd="14dp"
-                    android:paddingTop="14dp"
-                    android:paddingBottom="14dp"
-                    android:gravity="center_vertical">
+                    android:gravity="center_vertical"
+                    android:padding="13dp">
 
-                    <ImageView
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:padding="6dp"
-                        android:src="@drawable/ic_school"
-                        android:tint="#555555"
-                        android:background="#F4F3F0" />
+                    <LinearLayout
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:gravity="center"
+                        android:background="@drawable/about_icon_bg">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/ic_school"
+                            android:tint="#555555"/>
+
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -187,17 +207,18 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Programme"
+                            android:text="Course"
                             android:textSize="10sp"
-                            android:textColor="#999999" />
+                            android:textStyle="bold"
+                            android:textColor="#9A9A9A"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Bachelor Of Computer Sciences (Hons.) Netcentric"
+                            android:text="ICT602 - Mobile Technology And Development"
                             android:textSize="14sp"
                             android:textStyle="bold"
-                            android:textColor="#18181B" />
+                            android:textColor="#18181B"/>
 
                     </LinearLayout>
 
@@ -206,27 +227,30 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="0.5dp"
-                    android:background="#F0EEE9"
-                    android:layout_marginStart="58dp" />
+                    android:background="#EFEDE8"
+                    android:layout_marginStart="60dp"/>
 
-                <!-- University row -->
+                <!-- UNIVERSITY -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:paddingStart="14dp"
-                    android:paddingEnd="14dp"
-                    android:paddingTop="14dp"
-                    android:paddingBottom="14dp"
-                    android:gravity="center_vertical">
+                    android:gravity="center_vertical"
+                    android:padding="13dp">
 
-                    <ImageView
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:padding="6dp"
-                        android:src="@drawable/ic_university"
-                        android:tint="#555555"
-                        android:background="#F4F3F0" />
+                    <LinearLayout
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:gravity="center"
+                        android:background="@drawable/about_icon_bg">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/ic_university"
+                            android:tint="#555555"/>
+
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -240,7 +264,8 @@
                             android:layout_height="wrap_content"
                             android:text="University"
                             android:textSize="10sp"
-                            android:textColor="#999999" />
+                            android:textStyle="bold"
+                            android:textColor="#9A9A9A"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -248,7 +273,7 @@
                             android:text="UiTM Cawangan Melaka Kampus Jasin"
                             android:textSize="14sp"
                             android:textStyle="bold"
-                            android:textColor="#18181B" />
+                            android:textColor="#18181B"/>
 
                     </LinearLayout>
 
@@ -256,27 +281,29 @@
 
             </LinearLayout>
 
-            <!-- GitHub Button -->
+            <!-- GitHub button -->
             <Button
                 android:id="@+id/textGithub"
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:text="View GitHub Repository"
                 android:textStyle="bold"
+                android:textAllCaps="false"
                 android:textSize="14sp"
-                android:layout_marginTop="16dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="14dp"
                 android:backgroundTint="#0F0F12" />
 
-            <!-- Copyright notice -->
+            <!-- Footer -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="© 2026 MARSYA. All rights reserved.\nThis application was developed as part of an academic project at UiTM Cawangan Melaka Kampus Jasin."
-                android:textSize="11sp"
+                android:textSize="10sp"
                 android:textColor="#999999"
                 android:textAlignment="center"
-                android:lineSpacingMultiplier="1.5"
-                android:layout_marginTop="24dp"
+                android:lineSpacingExtra="2dp"
+                android:layout_marginTop="18dp"
                 android:paddingBottom="8dp"/>
 
         </LinearLayout>

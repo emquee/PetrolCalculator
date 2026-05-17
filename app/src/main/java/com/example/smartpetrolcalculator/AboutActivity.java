@@ -23,10 +23,8 @@ public class AboutActivity extends AppCompatActivity {
         bottomNavigation = findViewById(R.id.bottomNavigation);
 
         textGithub.setOnClickListener(v -> {
-            Intent intent = new Intent(
-                    Intent.ACTION_VIEW,
-                    Uri.parse("https://github.com/emquee/PetrolCalculator")
-            );
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse("https://github.com/emquee/PetrolCalculator"));
             startActivity(intent);
         });
 
